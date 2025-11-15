@@ -28,10 +28,9 @@ body {
     line-height: 1.6;
     background-color: var(--bg-white);
     overflow-x: hidden;
-    padding-top: 80px;
 }
 
-/* Navigation */
+/* Navigation - Removed */
 .navbar {
     position: fixed;
     top: 0;
@@ -1531,45 +1530,6 @@ h1, h2, h3, h4 {
         flex-direction: column;
         align-items: flex-start;
         gap: 0.5rem;
-    }
-
-    .nav-toggle {
-        display: flex;
-    }
-
-    .nav-menu {
-        position: fixed;
-        top: 80px;
-        left: 0;
-        right: 0;
-        background: white;
-        flex-direction: column;
-        gap: 0;
-        padding: 1rem 0;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        transform: translateX(-100%);
-        transition: transform 0.3s ease;
-    }
-
-    .nav-menu.active {
-        transform: translateX(0);
-    }
-
-    .nav-link {
-        padding: 1rem 2rem;
-        width: 100%;
-        text-align: left;
-        border-bottom: 1px solid var(--border-color);
-    }
-
-    .nav-link::after {
-        display: none;
-    }
-
-    .nav-link-cta {
-        margin: 1rem 2rem;
-        width: auto;
-        text-align: center;
     }
 }
 
