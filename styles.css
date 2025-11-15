@@ -844,6 +844,210 @@ h1, h2, h3, h4 {
     font-size: 1.5rem;
 }
 
+/* Case Study Section */
+.case-study-section {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+}
+
+.case-study-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.case-study-header h2 {
+    font-size: 2rem;
+    color: var(--text-dark);
+    font-weight: 700;
+    line-height: 1.4;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.case-study-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.case-block {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.case-block h3 {
+    font-size: 1.5rem;
+    color: var(--text-dark);
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.case-block h4 {
+    font-size: 1.25rem;
+    color: var(--text-dark);
+    font-weight: 600;
+    margin: 1.5rem 0 1rem;
+}
+
+.case-block p {
+    color: var(--text-light);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.case-block ul {
+    color: var(--text-light);
+    line-height: 1.8;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.case-block ul ul {
+    margin-top: 0.5rem;
+    margin-left: 2rem;
+}
+
+.case-block li {
+    margin-bottom: 0.5rem;
+}
+
+.results-block {
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    border-left: 4px solid var(--primary-color);
+}
+
+.result-item {
+    margin-bottom: 2rem;
+}
+
+.comparison {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin: 1rem 0;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 0.75rem;
+}
+
+.before, .after {
+    padding: 1rem;
+}
+
+.before {
+    border-right: 2px solid var(--border-color);
+}
+
+.before strong, .after strong {
+    color: var(--text-dark);
+    font-size: 1.125rem;
+}
+
+.highlight {
+    background: var(--primary-color);
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.testimonial-block {
+    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+    border-left: 4px solid #f59e0b;
+}
+
+.testimonial-block blockquote {
+    font-size: 1.25rem;
+    font-style: italic;
+    color: var(--text-dark);
+    line-height: 1.8;
+    margin: 0;
+    padding-left: 1.5rem;
+    border-left: 3px solid #f59e0b;
+}
+
+.roi-block {
+    background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%);
+    border-left: 4px solid #10b981;
+}
+
+.roi-details {
+    background: white;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    margin-top: 1rem;
+}
+
+.roi-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.roi-item:last-child {
+    border-bottom: none;
+}
+
+.roi-label {
+    font-weight: 600;
+    color: var(--text-dark);
+    font-size: 1.125rem;
+}
+
+.roi-value {
+    font-weight: 700;
+    color: var(--primary-color);
+    font-size: 1.25rem;
+}
+
+.highlight-roi {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    padding: 1.5rem !important;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+}
+
+.highlight-roi .roi-label,
+.highlight-roi .roi-value {
+    color: white;
+}
+
+.conclusion-block {
+    background: linear-gradient(135deg, #ede9fe 0%, #ddd6fe 100%);
+    border-left: 4px solid var(--primary-color);
+}
+
+.final-note {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 0.5rem;
+}
+
+.case-study-cta {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 2.5rem;
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.case-study-cta p {
+    font-size: 1.25rem;
+    color: var(--text-dark);
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
 /* FAQ Section */
 .faq-section {
     padding: 5rem 0;
@@ -1191,6 +1395,31 @@ h1, h2, h3, h4 {
 
     .form-row {
         grid-template-columns: 1fr;
+    }
+
+    .comparison {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .before {
+        border-right: none;
+        border-bottom: 2px solid var(--border-color);
+        padding-bottom: 1rem;
+    }
+
+    .case-block {
+        padding: 1.5rem;
+    }
+
+    .case-study-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .roi-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
     }
 }
 
