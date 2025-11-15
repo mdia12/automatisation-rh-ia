@@ -211,72 +211,172 @@
     <section id="tarifs" class="pricing-section">
         <div class="container">
             <h2 class="section-title">💸 Tarifs</h2>
+            
+            <!-- Installation One-Shot -->
+            <div class="pricing-intro">
+                <h3>Frais d'installation (paiement unique)</h3>
+                <p>Installation complète de votre système d'automatisation RH</p>
+            </div>
+
+            <div class="installation-pack">
+                <div class="pack-header">
+                    <h3>⭐ Pack d'installation</h3>
+                    <div class="pack-price">650 €</div>
+                    <p class="pack-subtitle">Paiement unique</p>
+                </div>
+                <div class="pack-includes">
+                    <h4>Ce qui est inclus :</h4>
+                    <div class="features-columns">
+                        <ul>
+                            <li>✔️ Paramétrage Gmail + connexions API</li>
+                            <li>✔️ Extraction PDF + parsing IA</li>
+                            <li>✔️ Connexion Airtable</li>
+                            <li>✔️ Scoring IA personnalisé</li>
+                        </ul>
+                        <ul>
+                            <li>✔️ Matching fiche de poste</li>
+                            <li>✔️ Notification e-mail / Slack</li>
+                            <li>✔️ Tests + optimisation</li>
+                            <li>✔️ Formation 60 min</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Abonnements Mensuels -->
+            <div class="pricing-intro subscription-intro">
+                <h3>🔁 Abonnements mensuels</h3>
+                <p>Choisissez la formule adaptée à votre volume de CV</p>
+            </div>
+
             <div class="pricing-grid">
-                <!-- Pack Essentiel -->
+                <!-- Formule Starter -->
                 <div class="pricing-card">
                     <div class="pricing-header">
-                        <div class="pricing-icon">🌿</div>
-                        <h3>Pack Essentiel</h3>
-                        <div class="pricing-price">490 €</div>
-                        <p class="pricing-desc">Pour équipes RH qui veulent automatiser le tri.</p>
+                        <div class="pricing-icon">🟦</div>
+                        <h3>Starter</h3>
+                        <div class="pricing-price">39 €<span>/mois</span></div>
+                        <p class="pricing-desc">Pour indépendants et petites équipes RH</p>
                     </div>
+                    <div class="pricing-limit">Jusqu'à 20 CV/mois</div>
                     <div class="pricing-features">
-                        <h4>Inclut :</h4>
                         <ul>
-                            <li>✔️ Installation complète</li>
-                            <li>✔️ Tri automatique des e-mails</li>
-                            <li>✔️ Extraction CV PDF</li>
                             <li>✔️ Résumé IA</li>
                             <li>✔️ Scoring global</li>
-                            <li>✔️ Airtable paramétré</li>
+                            <li>✔️ Extraction PDF automatique</li>
+                            <li>✔️ Airtable connecté</li>
+                            <li>✔️ Support e-mail</li>
                         </ul>
                     </div>
-                    <a href="#contact" class="btn btn-outline">Choisir ce pack</a>
+                    <a href="#devis" class="btn btn-outline">Choisir Starter</a>
                 </div>
 
-                <!-- Pack Pro -->
+                <!-- Formule Pro -->
                 <div class="pricing-card featured">
-                    <div class="badge">Plus populaire</div>
+                    <div class="badge">Recommandée</div>
                     <div class="pricing-header">
-                        <div class="pricing-icon">🌷</div>
-                        <h3>Pack Pro</h3>
-                        <div class="pricing-price">1 490 €</div>
-                        <p class="pricing-desc">Pour cabinets RH et PME sérieuses.</p>
+                        <div class="pricing-icon">🟩</div>
+                        <h3>Pro</h3>
+                        <div class="pricing-price">99 €<span>/mois</span></div>
+                        <p class="pricing-desc">Pour PME et cabinets de recrutement</p>
                     </div>
+                    <div class="pricing-limit">Jusqu'à 100 CV/mois</div>
                     <div class="pricing-features">
-                        <h4>Inclut :</h4>
                         <ul>
-                            <li>✔️ Tout le Pack Essentiel</li>
+                            <li>✔️ Tout le Starter</li>
                             <li>✔️ Scoring multi-critères</li>
-                            <li>✔️ Matching avec fiche de poste</li>
-                            <li>✔️ Historique candidats</li>
-                            <li>✔️ Slack / WhatsApp notifications</li>
-                            <li>✔️ Formation 1h</li>
+                            <li>✔️ Matching fiche de poste</li>
+                            <li>✔️ Historique détaillé des candidats</li>
+                            <li>✔️ Notifications Slack / WhatsApp</li>
+                            <li>✔️ Support prioritaire</li>
                         </ul>
                     </div>
-                    <a href="#contact" class="btn btn-primary">Choisir ce pack</a>
+                    <a href="#devis" class="btn btn-primary">Choisir Pro</a>
                 </div>
 
-                <!-- Pack Premium -->
+                <!-- Formule Business -->
                 <div class="pricing-card">
                     <div class="pricing-header">
-                        <div class="pricing-icon">💎</div>
-                        <h3>Pack Premium</h3>
-                        <div class="pricing-price">3 500 €</div>
-                        <p class="pricing-desc">Pour entreprises exigeantes.</p>
+                        <div class="pricing-icon">🟧</div>
+                        <h3>Business</h3>
+                        <div class="pricing-price">199 €<span>/mois</span></div>
+                        <p class="pricing-desc">Pour entreprises avec fort volume</p>
                     </div>
+                    <div class="pricing-limit">Jusqu'à 300 CV/mois</div>
                     <div class="pricing-features">
-                        <h4>Inclut :</h4>
                         <ul>
-                            <li>✔️ Pack Pro complet</li>
+                            <li>✔️ Tout le Pro</li>
                             <li>✔️ Analyse avancée IA</li>
-                            <li>✔️ Intégration ATS externe (Workable, Welcome to the Jungle…)</li>
-                            <li>✔️ Dashboard complet (Airtable + n8n)</li>
-                            <li>✔️ Support 3 mois + SLA</li>
+                            <li>✔️ Exportation Excel / Google Sheets</li>
+                            <li>✔️ Automations personnalisées</li>
+                            <li>✔️ Pipeline suivi candidat</li>
                         </ul>
                     </div>
-                    <a href="#contact" class="btn btn-outline">Choisir ce pack</a>
+                    <a href="#devis" class="btn btn-outline">Choisir Business</a>
                 </div>
+
+                <!-- Formule Enterprise -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <div class="pricing-icon">🟪</div>
+                        <h3>Enterprise</h3>
+                        <div class="pricing-price">399 €<span>/mois</span></div>
+                        <p class="pricing-desc">Pour grands comptes</p>
+                    </div>
+                    <div class="pricing-limit">Jusqu'à 1 000 CV/mois</div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li>✔️ Tout le Business</li>
+                            <li>✔️ Modèle IA personnalisé par poste</li>
+                            <li>✔️ API privée</li>
+                            <li>✔️ Dashboard RH complet</li>
+                            <li>✔️ Support premium + SLA</li>
+                        </ul>
+                    </div>
+                    <a href="#devis" class="btn btn-outline">Choisir Enterprise</a>
+                </div>
+            </div>
+
+            <!-- Options supplémentaires -->
+            <div class="pricing-extras">
+                <h3>⚡ Options supplémentaires</h3>
+                <div class="extras-grid">
+                    <div class="extra-item">
+                        <h4>➕ 50 CV supplémentaires</h4>
+                        <p class="extra-price">+20 €/mois</p>
+                    </div>
+                    <div class="extra-item">
+                        <h4>➕ 200 CV supplémentaires</h4>
+                        <p class="extra-price">+70 €/mois</p>
+                    </div>
+                    <div class="extra-item">
+                        <h4>➕ Connexion ATS</h4>
+                        <p class="extra-price">+250 € installation</p>
+                        <p class="extra-desc">(Workable, Welcome to the Jungle...)</p>
+                    </div>
+                    <div class="extra-item">
+                        <h4>➕ Rapport mensuel IA</h4>
+                        <p class="extra-price">+39 €/mois</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bundle spécial -->
+            <div class="pricing-bundle">
+                <div class="bundle-header">
+                    <h3>🎁 Bundle spécial : Installation + Abonnement annuel</h3>
+                </div>
+                <div class="bundle-benefits">
+                    <div class="bundle-item">
+                        <span class="bundle-icon">💰</span>
+                        <p><strong>-15%</strong> sur l'abonnement</p>
+                    </div>
+                    <div class="bundle-item">
+                        <span class="bundle-icon">⚡</span>
+                        <p>Installation à <strong>550 €</strong> au lieu de 650 €</p>
+                    </div>
+                </div>
+                <a href="#devis" class="btn btn-primary btn-large">Obtenir le bundle annuel</a>
             </div>
         </div>
     </section>
