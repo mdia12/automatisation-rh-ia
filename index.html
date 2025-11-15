@@ -1044,19 +1044,16 @@
                 })
                 .then(response => {
                     if (response.ok) {
-                        // Succès - Afficher le message de succès
-                        btnLoader.textContent = '✅ Envoyé !';
-                        setTimeout(() => {
-                            quoteForm.style.display = 'none';
-                            successMessage.style.display = 'block';
-                            
-                            // Réinitialiser le bouton pour la prochaine fois
-                            btnText.style.display = 'inline';
-                            btnIcon.style.display = 'inline';
-                            btnLoader.style.display = 'none';
-                            submitBtn.disabled = false;
-                            btnLoader.textContent = '⏳ Envoi en cours...';
-                        }, 1500);
+                        // Succès - Afficher immédiatement le message de succès
+                        quoteForm.style.display = 'none';
+                        successMessage.style.display = 'block';
+                        
+                        // Réinitialiser le bouton pour la prochaine fois
+                        btnText.style.display = 'inline';
+                        btnIcon.style.display = 'inline';
+                        btnLoader.style.display = 'none';
+                        submitBtn.disabled = false;
+                        btnLoader.textContent = '⏳ Envoi en cours...';
                     } else {
                         throw new Error('Erreur réseau');
                     }
