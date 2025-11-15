@@ -582,6 +582,12 @@ h1, h2, h3, h4 {
     margin: 0 auto;
 }
 
+.pricing-grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 900px;
+    gap: 2.5rem;
+}
+
 .pricing-card {
     background: white;
     border-radius: 1.5rem;
@@ -590,6 +596,8 @@ h1, h2, h3, h4 {
     transition: all 0.3s ease;
     position: relative;
     border: 3px solid transparent;
+    display: flex;
+    flex-direction: column;
 }
 
 .pricing-card:hover {
@@ -600,11 +608,11 @@ h1, h2, h3, h4 {
 .pricing-card.featured {
     border-color: var(--primary-color);
     background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%);
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 .pricing-card.featured:hover {
-    transform: scale(1.05) translateY(-10px);
+    transform: scale(1.02) translateY(-10px);
 }
 
 .badge {
@@ -666,9 +674,13 @@ h1, h2, h3, h4 {
     margin-bottom: 1.5rem;
 }
 
+.pricing-features {
+    flex: 1;
+}
+
 .pricing-features ul {
     list-style: none;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .pricing-features ul li {
@@ -682,8 +694,24 @@ h1, h2, h3, h4 {
     border-bottom: none;
 }
 
+.pricing-target {
+    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+    padding: 1rem 1.25rem;
+    border-radius: 0.75rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.9375rem;
+    line-height: 1.6;
+}
+
+.pricing-target strong {
+    color: var(--text-dark);
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
 .pricing-card .btn {
     width: 100%;
+    margin-top: auto;
 }
 
 /* Pricing Extras */
@@ -1726,6 +1754,7 @@ h1, h2, h3, h4 {
     }
 
     .pricing-grid,
+    .pricing-grid-2,
     .results-grid,
     .why-grid,
     .testimonials-grid {
