@@ -385,41 +385,157 @@
     <!-- Formulaire de devis -->
     <section id="devis" class="form-section">
         <div class="container">
-            <h2 class="section-title">Obtenir un devis personnalisé</h2>
-            <p class="section-intro">
-                Remplissez ce formulaire et nous vous recontacterons rapidement avec une proposition adaptée à vos besoins.
-            </p>
-            <form class="quote-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="nom">Nom *</label>
-                        <input type="text" id="nom" name="nom" required placeholder="Votre nom">
+            <div class="form-wrapper">
+                <div class="form-header">
+                    <div class="form-icon">📝</div>
+                    <h2 class="form-title">Obtenez votre devis personnalisé</h2>
+                    <p class="form-subtitle">
+                        Décrivez votre projet en 2 minutes et recevez une proposition sur-mesure sous 24h
+                    </p>
+                </div>
+                
+                <form class="quote-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <div class="form-step">
+                        <div class="step-indicator">
+                            <span class="step-number">1</span>
+                            <span class="step-label">Vos coordonnées</span>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nom">
+                                    <span class="label-icon">👤</span>
+                                    Nom *
+                                </label>
+                                <input type="text" id="nom" name="nom" required placeholder="Dupont">
+                            </div>
+                            <div class="form-group">
+                                <label for="prenom">
+                                    <span class="label-icon">✨</span>
+                                    Prénom *
+                                </label>
+                                <input type="text" id="prenom" name="prenom" required placeholder="Marie">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">
+                                <span class="label-icon">📧</span>
+                                Adresse email professionnelle *
+                            </label>
+                            <input type="email" id="email" name="email" required placeholder="marie.dupont@entreprise.com">
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="entreprise">
+                                    <span class="label-icon">🏢</span>
+                                    Entreprise
+                                </label>
+                                <input type="text" id="entreprise" name="entreprise" placeholder="Nom de votre société">
+                            </div>
+                            <div class="form-group">
+                                <label for="telephone">
+                                    <span class="label-icon">📱</span>
+                                    Téléphone
+                                </label>
+                                <input type="tel" id="telephone" name="telephone" placeholder="+33 6 12 34 56 78">
+                            </div>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="prenom">Prénom *</label>
-                        <input type="text" id="prenom" name="prenom" required placeholder="Votre prénom">
+
+                    <div class="form-step">
+                        <div class="step-indicator">
+                            <span class="step-number">2</span>
+                            <span class="step-label">Votre projet</span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">
+                                <span class="label-icon">💼</span>
+                                Parlez-nous de votre business et problématique *
+                            </label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Exemple : Nous recevons 50+ CV par semaine pour différents postes. Notre équipe RH (3 personnes) passe énormément de temps sur le tri initial. Nous cherchons à automatiser cette étape..."></textarea>
+                            <span class="form-hint">Décrivez votre situation actuelle, volume de recrutement, défis rencontrés...</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pack">
+                                <span class="label-icon">📦</span>
+                                Pack qui vous intéresse
+                            </label>
+                            <select id="pack" name="pack">
+                                <option value="">Sélectionnez un pack</option>
+                                <option value="essentiel">Pack Essentiel - 490€</option>
+                                <option value="pro">Pack Pro - 1 490€</option>
+                                <option value="premium">Pack Premium - 3 500€</option>
+                                <option value="personnalise">Solution personnalisée</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="budget">
+                                <span class="label-icon">💰</span>
+                                Budget estimé
+                            </label>
+                            <select id="budget" name="budget">
+                                <option value="">Sélectionnez une fourchette</option>
+                                <option value="500-1500">500€ - 1 500€</option>
+                                <option value="1500-3000">1 500€ - 3 000€</option>
+                                <option value="3000-5000">3 000€ - 5 000€</option>
+                                <option value="5000+">Plus de 5 000€</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="delai">
+                                <span class="label-icon">⏰</span>
+                                Délai souhaité
+                            </label>
+                            <select id="delai" name="delai">
+                                <option value="">Sélectionnez un délai</option>
+                                <option value="urgent">Urgent (moins de 1 semaine)</option>
+                                <option value="1-2-semaines">1-2 semaines</option>
+                                <option value="1-mois">1 mois</option>
+                                <option value="flexible">Flexible</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-footer">
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="rgpd" required>
+                                <span>J'accepte que mes données soient traitées conformément à la <a href="#politique-confidentialite">politique de confidentialité</a> *</span>
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-large btn-submit">
+                            <span class="btn-icon">🚀</span>
+                            Envoyer ma demande de devis
+                        </button>
+                        
+                        <p class="form-note">
+                            ⚡ Réponse garantie sous 24h • 🔒 Données sécurisées
+                        </p>
+                    </div>
+                </form>
+
+                <div class="trust-badges">
+                    <div class="badge-item">
+                        <span class="badge-icon">✅</span>
+                        <span>Devis gratuit</span>
+                    </div>
+                    <div class="badge-item">
+                        <span class="badge-icon">🎯</span>
+                        <span>Sur-mesure</span>
+                    </div>
+                    <div class="badge-item">
+                        <span class="badge-icon">💬</span>
+                        <span>Sans engagement</span>
                     </div>
                 </div>
-                <div class="form-group">
-                    <label for="email">Adresse email *</label>
-                    <input type="email" id="email" name="email" required placeholder="votre@email.com">
-                </div>
-                <div class="form-group">
-                    <label for="entreprise">Entreprise</label>
-                    <input type="text" id="entreprise" name="entreprise" placeholder="Nom de votre entreprise">
-                </div>
-                <div class="form-group">
-                    <label for="message">Parlez-nous de votre business et problématique *</label>
-                    <textarea id="message" name="message" rows="6" required placeholder="Décrivez votre situation actuelle, vos besoins en recrutement, et les défis que vous rencontrez..."></textarea>
-                </div>
-                <div class="form-group">
-                    <label class="checkbox-label">
-                        <input type="checkbox" name="rgpd" required>
-                        <span>J'accepte que mes données soient utilisées conformément à la <a href="#politique-confidentialite">politique de confidentialité</a> *</span>
-                    </label>
-                </div>
-                <button type="submit" class="btn btn-primary btn-large">Envoyer ma demande</button>
-            </form>
+            </div>
         </div>
     </section>
 
