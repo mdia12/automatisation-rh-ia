@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Automatisation RH IA : Transformez vos CV entrants en candidats triés, analysés et scorés automatiquement avec n8n, OpenAI et Airtable.">
+    <title>Automatisation RH IA - Recrutement Intelligent</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Automatisation RH IA : Transformez vos CV entrants en candidats triés, analysés et scorés… <span class="highlight">automatiquement.</span>
+                </h1>
+                <h2 class="hero-subtitle">
+                    Votre équipe RH passe encore des heures à ouvrir des e-mails, télécharger des CV, les lire, et les trier ?<br>
+                    Avec cette automatisation intelligente, votre processus de recrutement devient <strong>100% automatique</strong>.
+                </h2>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">Réserver une démo</a>
+                    <a href="#tarifs" class="btn btn-secondary">Voir les tarifs</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem-section">
+        <div class="container">
+            <h2 class="section-title">🧠 Le problème</h2>
+            <p class="section-intro">
+                Chaque jour, les entreprises reçoivent des dizaines voire des centaines de CV…<br>
+                Mais votre équipe RH :
+            </p>
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <div class="problem-icon">⏰</div>
+                    <p>perd du temps à trier les e-mails</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">📄</div>
+                    <p>ouvre manuellement les PDF</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">🔍</div>
+                    <p>analyse les compétences "à la main"</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">⚖️</div>
+                    <p>manque d'homogénéité dans l'évaluation des profils</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">❌</div>
+                    <p>rate des candidats pertinents faute de temps</p>
+                </div>
+            </div>
+            <div class="problem-result">
+                <strong>Résultat :</strong> inefficacité, erreurs, délais rallongés, et stress pour l'équipe.
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="solution-section">
+        <div class="container">
+            <h2 class="section-title">🚀 La solution — Votre Automatisation RH IA</h2>
+            <p class="section-intro">
+                Nous avons créé un système complet, basé sur l'IA, qui transforme chaque e-mail reçu en fiche candidat analysée, résumée et scorée automatiquement.
+            </p>
+            
+            <div class="tech-stack">
+                <h3>✨ Technologie utilisée :</h3>
+                <div class="tech-grid">
+                    <div class="tech-item">
+                        <span class="tech-name">n8n</span>
+                        <span class="tech-desc">moteur d'automatisation</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-name">OpenAI</span>
+                        <span class="tech-desc">analyse, résumé, scoring IA</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-name">Airtable</span>
+                        <span class="tech-desc">base candidats</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-name">Extraction PDF</span>
+                        <span class="tech-desc">intelligente</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-name">Classificateur IA</span>
+                        <span class="tech-desc">d'e-mails</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-name">Filtre</span>
+                        <span class="tech-desc">anti-bruit</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workflow Section -->
+    <section class="workflow-section">
+        <div class="container">
+            <h2 class="section-title">⚙️ Fonctionnement</h2>
+            <div class="workflow-steps">
+                <div class="workflow-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Réception des e-mails</h3>
+                        <p>→ Le Gmail Trigger détecte automatiquement chaque nouvelle candidature.</p>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Classification par IA</h3>
+                        <p>→ L'IA identifie s'il s'agit d'un vrai CV, d'un spam, ou d'un message hors sujet.</p>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Extraction PDF intelligente</h3>
+                        <p>→ Le CV est extrait, lu et converti en texte structuré (même les CV complexes).</p>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Analyse & résumé IA</h3>
+                        <p>→ L'IA génère automatiquement :</p>
+                        <ul>
+                            <li>Résumé clair du profil</li>
+                            <li>Points forts / Points faibles</li>
+                            <li>Expérience clé</li>
+                            <li>Compétences principales</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Scoring avancé</h3>
+                        <p>→ Score global<br>
+                        → Score par expérience / compétences / matching poste<br>
+                        → Explications détaillées</p>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="step-number">6</div>
+                    <div class="step-content">
+                        <h3>Enregistrement dans Airtable</h3>
+                        <p>→ Fiche candidat entièrement remplie<br>
+                        → Mise à jour automatique du statut<br>
+                        → Prêt pour décision RH</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="results-section">
+        <div class="container">
+            <h2 class="section-title">⭐ Résultats immédiats</h2>
+            <p class="section-intro">Grâce à cette automatisation, vous obtenez :</p>
+            <div class="results-grid">
+                <div class="result-card">
+                    <div class="result-icon">⚡</div>
+                    <h3>90% de temps gagné</h3>
+                    <p>sur le tri</p>
+                </div>
+                <div class="result-card">
+                    <div class="result-icon">🎯</div>
+                    <h3>Analyse cohérente</h3>
+                    <p>et objective</p>
+                </div>
+                <div class="result-card">
+                    <div class="result-icon">🤖</div>
+                    <h3>Scoring IA</h3>
+                    <p>ultra-fiable</p>
+                </div>
+                <div class="result-card">
+                    <div class="result-icon">📊</div>
+                    <h3>CV lisibles</h3>
+                    <p>et comparables</p>
+                </div>
+                <div class="result-card">
+                    <div class="result-icon">✅</div>
+                    <h3>Réduction des erreurs</h3>
+                    <p>humaines</p>
+                </div>
+                <div class="result-card">
+                    <div class="result-icon">🚀</div>
+                    <h3>Process plus rapide</h3>
+                    <p>= meilleure expérience candidat</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="tarifs" class="pricing-section">
+        <div class="container">
+            <h2 class="section-title">💸 Tarifs</h2>
+            <div class="pricing-grid">
+                <!-- Pack Essentiel -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <div class="pricing-icon">🌿</div>
+                        <h3>Pack Essentiel</h3>
+                        <div class="pricing-price">490 €</div>
+                        <p class="pricing-desc">Pour équipes RH qui veulent automatiser le tri.</p>
+                    </div>
+                    <div class="pricing-features">
+                        <h4>Inclut :</h4>
+                        <ul>
+                            <li>✔️ Installation complète</li>
+                            <li>✔️ Tri automatique des e-mails</li>
+                            <li>✔️ Extraction CV PDF</li>
+                            <li>✔️ Résumé IA</li>
+                            <li>✔️ Scoring global</li>
+                            <li>✔️ Airtable paramétré</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="btn btn-outline">Choisir ce pack</a>
+                </div>
+
+                <!-- Pack Pro -->
+                <div class="pricing-card featured">
+                    <div class="badge">Plus populaire</div>
+                    <div class="pricing-header">
+                        <div class="pricing-icon">🌷</div>
+                        <h3>Pack Pro</h3>
+                        <div class="pricing-price">1 490 €</div>
+                        <p class="pricing-desc">Pour cabinets RH et PME sérieuses.</p>
+                    </div>
+                    <div class="pricing-features">
+                        <h4>Inclut :</h4>
+                        <ul>
+                            <li>✔️ Tout le Pack Essentiel</li>
+                            <li>✔️ Scoring multi-critères</li>
+                            <li>✔️ Matching avec fiche de poste</li>
+                            <li>✔️ Historique candidats</li>
+                            <li>✔️ Slack / WhatsApp notifications</li>
+                            <li>✔️ Formation 1h</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="btn btn-primary">Choisir ce pack</a>
+                </div>
+
+                <!-- Pack Premium -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <div class="pricing-icon">💎</div>
+                        <h3>Pack Premium</h3>
+                        <div class="pricing-price">3 500 €</div>
+                        <p class="pricing-desc">Pour entreprises exigeantes.</p>
+                    </div>
+                    <div class="pricing-features">
+                        <h4>Inclut :</h4>
+                        <ul>
+                            <li>✔️ Pack Pro complet</li>
+                            <li>✔️ Analyse avancée IA</li>
+                            <li>✔️ Intégration ATS externe (Workable, Welcome to the Jungle…)</li>
+                            <li>✔️ Dashboard complet (Airtable + n8n)</li>
+                            <li>✔️ Support 3 mois + SLA</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="btn btn-outline">Choisir ce pack</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Section -->
+    <section class="why-section">
+        <div class="container">
+            <h2 class="section-title">🧩 Pourquoi choisir cette solution ?</h2>
+            <div class="why-grid">
+                <div class="why-item">
+                    <div class="why-icon">🔧</div>
+                    <h3>100% no-code</h3>
+                    <p>évolutif et modifiable</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">🔗</div>
+                    <h3>Compatible avec TOUT</h3>
+                    <p>Gmail, Outlook, ATS, CRM, Slack…</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">🎨</div>
+                    <h3>IA personnalisée</h3>
+                    <p>selon votre entreprise</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">🛠️</div>
+                    <h3>Maintenance simple</h3>
+                    <p>n8n facile à gérer</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">🔐</div>
+                    <h3>Contrôle total</h3>
+                    <p>Vous gardez la main sur le système</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">💬 Témoignages</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">CD</div>
+                        <div>
+                            <h4>Claire D.</h4>
+                            <p>Directrice RH</p>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">
+                        "Nous avons réduit notre charge de tri CV de 12h à 1h par semaine. Le scoring IA nous évite les débats interminables."
+                    </p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">KL</div>
+                        <div>
+                            <h4>Karim L.</h4>
+                            <p>Recruteur Tech</p>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">
+                        "C'est comme avoir un assistant RH 24h/24. Les profils sont triés, résumés et comparables immédiatement."
+                    </p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">LM</div>
+                        <div>
+                            <h4>Lucas M.</h4>
+                            <p>CEO</p>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">
+                        "On n'a jamais eu un process de recrutement aussi fluide. Investissement largement rentabilisé en 2 semaines."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final Section -->
+    <section id="contact" class="cta-section">
+        <div class="container">
+            <h1 class="cta-title">
+                Automatisez votre recrutement dès aujourd'hui.
+            </h1>
+            <p class="cta-subtitle">
+                Gagnez du temps. Recrutez mieux. Dormez tranquille.
+            </p>
+            <div class="cta-buttons">
+                <a href="mailto:contact@votre-entreprise.com?subject=Demande de démo - Automatisation RH IA" class="btn btn-primary btn-large">
+                    👉 Réserver une démo maintenant
+                </a>
+                <a href="mailto:contact@votre-entreprise.com?subject=Demande de devis - Automatisation RH IA" class="btn btn-secondary btn-large">
+                    👉 Obtenir un devis instantané
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>À propos</h4>
+                    <p>Solution d'automatisation RH intelligente pour optimiser votre processus de recrutement.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Légal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#mentions-legales">Mentions légales</a></li>
+                        <li><a href="#politique-confidentialite">Politique de confidentialité</a></li>
+                        <li><a href="#cgv">CGV</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Directeur de la publication :<br>Michael D. Las Palmas</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Automatisation RH IA. Tous droits réservés.</p>
+                <p>Site créé par <a href="https://nexoai.fr" target="_blank" rel="noopener noreferrer">NexoAI.fr</a> | Propulsé par n8n, OpenAI & Airtable</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mentions Légales Modal -->
+    <div id="mentions-legales" class="modal">
+        <div class="modal-content">
+            <a href="#" class="modal-close">&times;</a>
+            <h2>Mentions Légales</h2>
+            
+            <h3>1. Éditeur du site</h3>
+            <p>
+                Le présent site web est édité par :<br>
+                <strong>Automatisation RH IA</strong><br>
+                Directeur de la publication : Michael D. Las Palmas
+            </p>
+
+            <h3>2. Hébergement</h3>
+            <p>
+                Ce site est hébergé par :<br>
+                GitHub Pages<br>
+                GitHub, Inc.<br>
+                88 Colin P Kelly Jr St<br>
+                San Francisco, CA 94107<br>
+                États-Unis
+            </p>
+
+            <h3>3. Conception et réalisation</h3>
+            <p>
+                Site web conçu et développé par :<br>
+                <a href="https://nexoai.fr" target="_blank" rel="noopener noreferrer">NexoAI.fr</a>
+            </p>
+
+            <h3>4. Propriété intellectuelle</h3>
+            <p>
+                L'ensemble des contenus présents sur ce site (textes, images, graphismes, logo, icônes, sons, logiciels) est la propriété exclusive de l'éditeur ou de ses partenaires.
+                Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite, sauf autorisation écrite préalable.
+            </p>
+
+            <h3>5. Responsabilité</h3>
+            <p>
+                L'éditeur s'efforce d'assurer l'exactitude et la mise à jour des informations diffusées sur ce site. Toutefois, il ne peut garantir l'exactitude, la précision ou l'exhaustivité des informations mises à disposition sur ce site.
+            </p>
+
+            <h3>6. Cookies</h3>
+            <p>
+                Ce site peut utiliser des cookies pour améliorer l'expérience utilisateur. En naviguant sur ce site, vous acceptez l'utilisation de cookies conformément à notre politique de confidentialité.
+            </p>
+
+            <h3>7. Contact</h3>
+            <p>
+                Pour toute question ou demande d'information concernant le site, vous pouvez nous contacter à l'adresse email indiquée sur la page.
+            </p>
+        </div>
+    </div>
+
+    <!-- Politique de Confidentialité Modal -->
+    <div id="politique-confidentialite" class="modal">
+        <div class="modal-content">
+            <a href="#" class="modal-close">&times;</a>
+            <h2>Politique de Confidentialité</h2>
+            
+            <h3>1. Introduction</h3>
+            <p>
+                La présente politique de confidentialité a pour but de vous informer sur la manière dont nous collectons, utilisons et protégeons vos données personnelles conformément au Règlement Général sur la Protection des Données (RGPD).
+            </p>
+
+            <h3>2. Responsable du traitement</h3>
+            <p>
+                Le responsable du traitement des données est :<br>
+                <strong>Automatisation RH IA</strong><br>
+                Directeur : Michael D. Las Palmas
+            </p>
+
+            <h3>3. Données collectées</h3>
+            <p>
+                Nous sommes susceptibles de collecter les données suivantes :
+            </p>
+            <ul>
+                <li>Nom et prénom</li>
+                <li>Adresse email</li>
+                <li>Numéro de téléphone (si fourni)</li>
+                <li>Société et poste occupé</li>
+                <li>Données de navigation (cookies, adresse IP)</li>
+            </ul>
+
+            <h3>4. Finalité du traitement</h3>
+            <p>
+                Vos données personnelles sont collectées pour les finalités suivantes :
+            </p>
+            <ul>
+                <li>Répondre à vos demandes de contact et de devis</li>
+                <li>Fournir nos services d'automatisation RH</li>
+                <li>Améliorer nos services et notre site web</li>
+                <li>Vous envoyer des informations commerciales (avec votre consentement)</li>
+            </ul>
+
+            <h3>5. Base légale du traitement</h3>
+            <p>
+                Le traitement de vos données repose sur :
+            </p>
+            <ul>
+                <li>Votre consentement</li>
+                <li>L'exécution d'un contrat</li>
+                <li>Le respect d'obligations légales</li>
+                <li>Notre intérêt légitime</li>
+            </ul>
+
+            <h3>6. Durée de conservation</h3>
+            <p>
+                Vos données personnelles sont conservées pendant la durée nécessaire aux finalités pour lesquelles elles ont été collectées, et conformément aux obligations légales de conservation.
+            </p>
+
+            <h3>7. Destinataires des données</h3>
+            <p>
+                Vos données peuvent être transmises à :
+            </p>
+            <ul>
+                <li>Nos prestataires techniques (hébergement, outils d'automatisation)</li>
+                <li>Nos partenaires commerciaux (avec votre consentement)</li>
+                <li>Les autorités légales si requis par la loi</li>
+            </ul>
+
+            <h3>8. Vos droits</h3>
+            <p>
+                Conformément au RGPD, vous disposez des droits suivants :
+            </p>
+            <ul>
+                <li>Droit d'accès à vos données personnelles</li>
+                <li>Droit de rectification de vos données</li>
+                <li>Droit à l'effacement (droit à l'oubli)</li>
+                <li>Droit à la limitation du traitement</li>
+                <li>Droit à la portabilité de vos données</li>
+                <li>Droit d'opposition au traitement</li>
+                <li>Droit de retirer votre consentement à tout moment</li>
+            </ul>
+            <p>
+                Pour exercer ces droits, vous pouvez nous contacter via l'adresse email indiquée sur le site.
+            </p>
+
+            <h3>9. Sécurité des données</h3>
+            <p>
+                Nous mettons en œuvre toutes les mesures techniques et organisationnelles appropriées pour protéger vos données personnelles contre la destruction accidentelle ou illicite, la perte accidentelle, l'altération, la diffusion ou l'accès non autorisé.
+            </p>
+
+            <h3>10. Cookies</h3>
+            <p>
+                Notre site peut utiliser des cookies pour améliorer votre expérience. Vous pouvez paramétrer votre navigateur pour refuser les cookies, mais cela peut affecter certaines fonctionnalités du site.
+            </p>
+
+            <h3>11. Transferts internationaux</h3>
+            <p>
+                Certaines de vos données peuvent être transférées vers des pays hors de l'Union Européenne. Dans ce cas, nous nous assurons que des garanties appropriées sont en place conformément au RGPD.
+            </p>
+
+            <h3>12. Réclamation</h3>
+            <p>
+                Si vous estimez que vos droits ne sont pas respectés, vous avez le droit d'introduire une réclamation auprès de la Commission Nationale de l'Informatique et des Libertés (CNIL) :
+            </p>
+            <p>
+                CNIL<br>
+                3 Place de Fontenoy<br>
+                TSA 80715<br>
+                75334 PARIS CEDEX 07<br>
+                Téléphone : 01 53 73 22 22<br>
+                Site web : <a href="https://www.cnil.fr" target="_blank" rel="noopener noreferrer">www.cnil.fr</a>
+            </p>
+
+            <h3>13. Modification de la politique</h3>
+            <p>
+                Nous nous réservons le droit de modifier cette politique de confidentialité à tout moment. Toute modification sera publiée sur cette page avec une date de mise à jour.
+            </p>
+
+            <p><strong>Dernière mise à jour : 15 novembre 2025</strong></p>
+        </div>
+    </div>
+
+    <!-- CGV Modal -->
+    <div id="cgv" class="modal">
+        <div class="modal-content">
+            <a href="#" class="modal-close">&times;</a>
+            <h2>Conditions Générales de Vente</h2>
+            
+            <h3>1. Objet</h3>
+            <p>
+                Les présentes Conditions Générales de Vente (CGV) régissent les relations contractuelles entre Automatisation RH IA et ses clients pour la fourniture de solutions d'automatisation RH.
+            </p>
+
+            <h3>2. Services proposés</h3>
+            <p>
+                Nous proposons des services d'automatisation du processus de recrutement incluant :
+            </p>
+            <ul>
+                <li>Installation et configuration de workflows n8n</li>
+                <li>Intégration avec OpenAI et Airtable</li>
+                <li>Tri et analyse automatique des CV</li>
+                <li>Scoring des candidatures</li>
+                <li>Formation et support technique</li>
+            </ul>
+
+            <h3>3. Tarifs</h3>
+            <p>
+                Les tarifs applicables sont ceux en vigueur au moment de la commande. Ils sont indiqués en euros TTC.
+                Les tarifs incluent les prestations décrites dans chaque pack (Essentiel, Pro, Premium).
+            </p>
+
+            <h3>4. Commande</h3>
+            <p>
+                Toute commande implique l'acceptation sans réserve des présentes CGV. La validation de la commande vaut acceptation de ces conditions.
+            </p>
+
+            <h3>5. Modalités de paiement</h3>
+            <p>
+                Le paiement s'effectue :
+            </p>
+            <ul>
+                <li>50% à la commande</li>
+                <li>50% à la livraison du projet</li>
+            </ul>
+            <p>
+                Moyens de paiement acceptés : virement bancaire, carte bancaire.
+            </p>
+
+            <h3>6. Délais de livraison</h3>
+            <p>
+                Les délais de livraison sont communiqués à titre indicatif lors de la commande. Nous nous efforçons de respecter ces délais, mais des retards peuvent survenir sans engager notre responsabilité.
+            </p>
+
+            <h3>7. Droit de rétractation</h3>
+            <p>
+                Conformément à l'article L221-28 du Code de la consommation, le droit de rétractation ne peut être exercé pour les prestations de services pleinement exécutées avant la fin du délai de rétractation.
+            </p>
+
+            <h3>8. Garanties</h3>
+            <p>
+                Nous garantissons que nos services sont conformes aux descriptions fournies. En cas de non-conformité, nous nous engageons à corriger les dysfonctionnements dans les meilleurs délais.
+            </p>
+
+            <h3>9. Responsabilité</h3>
+            <p>
+                Notre responsabilité est limitée au montant payé par le client. Nous ne pourrons être tenus responsables des dommages indirects.
+            </p>
+
+            <h3>10. Propriété intellectuelle</h3>
+            <p>
+                Les workflows et solutions développés restent notre propriété jusqu'au paiement intégral. Une licence d'utilisation est accordée au client après paiement complet.
+            </p>
+
+            <h3>11. Résiliation</h3>
+            <p>
+                En cas de manquement grave aux obligations contractuelles, chaque partie peut résilier le contrat après mise en demeure restée sans effet pendant 15 jours.
+            </p>
+
+            <h3>12. Litiges</h3>
+            <p>
+                En cas de litige, une solution amiable sera recherchée avant toute action judiciaire. À défaut, les tribunaux compétents seront ceux du lieu de notre siège social.
+            </p>
+
+            <h3>13. Droit applicable</h3>
+            <p>
+                Les présentes CGV sont soumises au droit français.
+            </p>
+
+            <p><strong>Dernière mise à jour : 15 novembre 2025</strong></p>
+        </div>
+    </div>
+</body>
+</html>
